@@ -1,0 +1,16 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reduced minimum size for more flexibility */
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Optional: Only stack on very narrow screens */
+@media (max-width: 480px) {
+  .card-list {
+    grid-template-columns: 1fr; /* Stack in a single column on small screens */
+  }
+}
